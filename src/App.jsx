@@ -10,6 +10,8 @@ import { AuthContextProvider } from './context/AuthContext';
 import Admin from './components/Admin';
 import PrivateRoute from './components/PrivateRoute';
 import PrivateRoute2 from './components/PrivateRoute2';
+import GamePage from './components/GamePage';
+import WinnerPage from './components/WinnerPage';
 
 const App = () => {
 	return (
@@ -21,6 +23,8 @@ const App = () => {
 					<Route path="/about" component={About} />
 					<Route path="/contact" component={Contact} />
 					<Route path="/blog" component={Blog} />
+					<Route path="/game" component={GamePage} />
+					<Route path="/winner" component={WinnerPage} />
 					<PrivateRoute2 path="/admin" component={Admin} />
 				</Switch>
 			</BrowserRouter>
